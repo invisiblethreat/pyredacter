@@ -1,4 +1,4 @@
-def redact_string(item: str):
+def redact_string(item: str) -> str:
     start = item[0]
     end = item[len(item)-1]
     stars = "*"*(len(item)-2)
