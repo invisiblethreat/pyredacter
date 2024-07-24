@@ -7,5 +7,5 @@
 >>> from redact import redact_string
 >>> s = "this is a string"
 >>> redact_string(s)
-'t**************g'
+'th************ng'
 ```
