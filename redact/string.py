@@ -1,7 +1,10 @@
 def redact_string(item: str) -> str:
-    start = item[0]
-    end = item[len(item)-1]
-    stars = "*"*(len(item)-2)
+    default = "*****"
+    if len(item)<=4:
+        return default
+    start = f"{item[0]}{item[1]}"
+    end = f"{item[len(item)-2]}{item[len(item)-1]}"
+    stars = "*"*(len(item)-4)
     return f"{start}{stars}{end}"
 
 
